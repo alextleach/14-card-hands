@@ -6,11 +6,60 @@
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
+  <div class="app">
+    <div class="app__nav">
+      <div class="width-container">
+        <h2 class="header-text">CARD HANDS</h2>
+      </div>
+    </div>
+    <div class="app__main">
+      <div class="width-container">
+        <div class="row">
+          <div class="card">
+            <div class="card__image">
+              <img src="http://placecera.com/210/300" alt="" class="card__image__img">
+            </div>
+            <h3 class="card__value">8</h3>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="http://placecera.com/210/300" alt="" class="card__image__img">
+            </div>
+            <h3 class="card__value">8</h3>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="http://placecera.com/210/300" alt="" class="card__image__img">
+            </div>
+            <h3 class="card__value">8</h3>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="http://placecera.com/210/300" alt="" class="card__image__img">
+            </div>
+            <h3 class="card__value">8</h3>
+          </div>
+          <div class="card">
+            <div class="card__image">
+              <img src="http://placecera.com/210/300" alt="" class="card__image__img">
+            </div>
+            <h3 class="card__value">8</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="/vendor.js" charset="utf-8"></script>
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
+  let App = require('app');
+  const pageElement = document.querySelector('.app');
+  function appStart(){
+    const appView = new App(pageElement);
+  }
+
   </script>
 </body>
 </html>
