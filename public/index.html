@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>14 Card Hands</title>
   <link rel="stylesheet" href="/app.css">
 </head>
+
 <body>
   <div class="app">
     <div class="app__nav">
@@ -13,7 +15,7 @@
       </div>
     </div>
     <div class="app__main">
-      <div class="width-container">
+      <div class="width-container app-container">
         <div class="row">
           <div class="card">
             <div class="card__image">
@@ -54,12 +56,11 @@
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
-  let App = require('app');
-  const pageElement = document.querySelector('.app');
-  function appStart(){
+    let App = require('app');
+    const pageElement = document.querySelector('.app');
     const appView = new App(pageElement);
-  }
-
+    appView.start();
   </script>
 </body>
+
 </html>
