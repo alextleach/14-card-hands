@@ -17,15 +17,13 @@ export default class Hand {
   render() {
     const cardItem = this.data.cards.map((card) => {
       const cardElement = document.createElement('div');
-      cardElement.classList.add('row');
+      cardElement.classList.add('card');
 
       cardElement.innerHTML = `
-  <div class="card">
         <div class="card__image">
           <img src="${card.image}" alt="" class="card__image__img">
         </div>
         <h3 class="card__value">${card.value}</h3>
-      </div>
   `;
 
       return cardElement;
